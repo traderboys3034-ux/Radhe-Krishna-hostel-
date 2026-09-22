@@ -1,0 +1,2377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Radhe Krishna Boys & Girls Hostel | Kankarbagh, Patna</title>
+  <meta name="description" content="Radhe Krishna Boys & Girls Hostel, A-20 PC Colony Road, Kankarbagh, Patna, Bihar 800020.">
+  
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Radhe Krishna Boys & Girls Hostel | Kankarbagh, Patna">
+  <meta property="og:description" content="Radhe Krishna Boys & Girls Hostel, A-20 PC Colony Road, Kankarbagh, Patna, Bihar 800020.">
+  <meta property="og:site_name" content="Radhe Krishna Boys & Girls Hostel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Radhe Krishna Boys & Girls Hostel | Kankarbagh, Patna">
+  <meta name="twitter:description" content="Radhe Krishna Boys & Girls Hostel, A-20 PC Colony Road, Kankarbagh, Patna, Bihar 800020.">
+
+  <!-- Schema.org JSON-LD Structured Data for Hostel / LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hostel",
+    "name": "Radhe Krishna Boys & Girls Hostel",
+    "description": "Radhe Krishna Boys & Girls Hostel, A-20 PC Colony Road, Kankarbagh, Patna, Bihar 800020.",
+    "telephone": "+91 91990 28111",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "A-20, P C Colony Rd, PC Colony, Kankarbagh, Patrakar Nagar",
+      "addressLocality": "Patna",
+      "addressRegion": "Bihar",
+      "postalCode": "800020",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.5941,
+      "longitude": 85.1565
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "05:30",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js CDN for Lightweight 3D Architectural Scene -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <style>
+    /* ==========================================================================
+       THEME & COLOR PALETTE
+       Primary: Deep Navy #071A2B
+       Secondary: Royal Blue #123C66
+       Accent: Warm Gold #D6A84F
+       Background: #F6F8FB
+       Text: #101828
+       White: #FFFFFF
+       ========================================================================== */
+    :root {
+      --color-primary: #071A2B;
+      --color-secondary: #123C66;
+      --color-accent: #D6A84F;
+      --color-accent-hover: #C59740;
+      --color-accent-subtle: rgba(214, 168, 79, 0.12);
+      --color-bg: #F6F8FB;
+      --color-text: #101828;
+      --color-text-muted: #516377;
+      --color-white: #FFFFFF;
+      --color-border: #E2E8F0;
+      --color-border-dark: #1E3347;
+      --shadow-sm: 0 2px 8px rgba(7, 26, 43, 0.05);
+      --shadow-md: 0 8px 24px rgba(7, 26, 43, 0.08);
+      --shadow-lg: 0 16px 40px rgba(7, 26, 43, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 56px auto;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 12px;
+    }
+
+    .section-tag::before, .section-tag::after {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background-color: var(--color-accent);
+      opacity: 0.6;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--color-primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.0625rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      min-height: 48px;
+    }
+
+    .btn-gold {
+      background-color: var(--color-accent);
+      color: var(--color-primary);
+      box-shadow: 0 4px 14px rgba(214, 168, 79, 0.35);
+    }
+
+    .btn-gold:hover, .btn-gold:focus-visible {
+      background-color: var(--color-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(214, 168, 79, 0.45);
+    }
+
+    .btn-outline {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: var(--color-white);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline:hover, .btn-outline:focus-visible {
+      background-color: rgba(255, 255, 255, 0.16);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      box-shadow: 0 4px 12px rgba(18, 60, 102, 0.25);
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus-visible {
+      background-color: #0d2f50;
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: all 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(7, 26, 43, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(214, 168, 79, 0.15);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--color-white);
+    }
+
+    .logo-emblem {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+      border: 1.5px solid var(--color-accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+      color: var(--color-white);
+    }
+
+    .logo-sub {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-accent);
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover, .nav-link:focus-visible {
+      color: var(--color-white);
+    }
+
+    .nav-link:hover::after, .nav-link:focus-visible::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mobile-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      color: var(--color-white);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-toggle svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 82%;
+      max-width: 360px;
+      height: 100vh;
+      background-color: var(--color-primary);
+      z-index: 1001;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+      border-left: 1px solid rgba(214, 168, 79, 0.2);
+    }
+
+    .mobile-drawer.open {
+      right: 0;
+    }
+
+    .mobile-drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-drawer-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 36px;
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .mobile-nav-link {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      display: block;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .mobile-nav-link:hover {
+      color: var(--color-accent);
+      padding-left: 6px;
+    }
+
+    /* ==========================================================================
+       HERO SECTION WITH THREE.JS 3D SCENE
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at 60% 30%, #0d2f50 0%, #071A2B 75%);
+      color: var(--color-white);
+      overflow: hidden;
+      padding: 120px 0 60px 0;
+    }
+
+    /* Three.js Canvas Container */
+    #hero-canvas-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: auto;
+      cursor: grab;
+    }
+
+    #hero-canvas-container:active {
+      cursor: grabbing;
+    }
+
+    .hero-gradient-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        90deg,
+        rgba(7, 26, 43, 0.92) 0%,
+        rgba(7, 26, 43, 0.78) 45%,
+        rgba(7, 26, 43, 0.35) 100%
+      );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 680px;
+      pointer-events: none;
+    }
+
+    .hero-content * {
+      pointer-events: auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(18, 60, 102, 0.6);
+      border: 1px solid rgba(214, 168, 79, 0.4);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--color-accent);
+      margin-bottom: 24px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #22C55E;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    .hero-title-main {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4.25rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      color: var(--color-white);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .hero-title-sub {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+      font-weight: 600;
+      color: var(--color-accent);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      font-size: clamp(1rem, 2vw, 1.1875rem);
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 36px;
+      max-width: 580px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .hero-3d-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.65);
+      background: rgba(0, 0, 0, 0.25);
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* ==========================================================================
+       ABOUT SECTION
+       ========================================================================== */
+    .about-section {
+      padding: 100px 0;
+      background-color: var(--color-white);
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .about-statement-card {
+      background-color: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-statement-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-secondary));
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .about-quote {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--color-primary);
+      margin-bottom: 24px;
+    }
+
+    .about-note {
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    .about-details-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .about-info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px 20px;
+      background: var(--color-bg);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+
+    .about-info-icon {
+      width: 42px;
+      height: 42px;
+      background-color: var(--color-primary);
+      color: var(--color-accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .about-info-text strong {
+      display: block;
+      color: var(--color-primary);
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .about-info-text span {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       FACILITIES SECTION (PLACEHOLDER STRUCTURE)
+       ========================================================================== */
+    .facilities-section {
+      padding: 100px 0;
+      background-color: var(--color-bg);
+    }
+
+    .facilities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .facility-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .facility-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(214, 168, 79, 0.4);
+    }
+
+    .facility-icon-wrap {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 20px auto;
+      background: var(--color-accent-subtle);
+      border: 1px solid rgba(214, 168, 79, 0.3);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-secondary);
+      transition: all 0.3s ease;
+    }
+
+    .facility-card:hover .facility-icon-wrap {
+      background-color: var(--color-secondary);
+      color: var(--color-accent);
+      transform: scale(1.05);
+    }
+
+    .facility-title {
+      font-family: var(--font-display);
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 10px;
+    }
+
+    .facility-desc {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      line-height: 1.5;
+    }
+
+    .facility-placeholder-badge {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #718096;
+      background: #EDF2F7;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* ==========================================================================
+       3D INTERACTION SECTION: EXPLORE RADHE KRISHNA HOSTEL
+       ========================================================================== */
+    .explore-section {
+      padding: 100px 0;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .explore-section .section-title {
+      color: var(--color-white);
+    }
+
+    .explore-section .section-subtitle {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .explore-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      perspective: 1000px;
+    }
+
+    .explore-card {
+      background: rgba(18, 60, 102, 0.35);
+      border: 1px solid rgba(214, 168, 79, 0.25);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      text-align: center;
+      transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.2s ease, border-color 0.2s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+      position: relative;
+      backdrop-filter: blur(10px);
+    }
+
+    .explore-card:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .explore-card-inner {
+      transform: translateZ(30px);
+    }
+
+    .explore-card-visual {
+      width: 100%;
+      height: 160px;
+      margin-bottom: 24px;
+      background: radial-gradient(circle, rgba(214, 168, 79, 0.15) 0%, rgba(7, 26, 43, 0.6) 80%);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .explore-card-visual svg {
+      width: 64px;
+      height: 64px;
+      color: var(--color-accent);
+      filter: drop-shadow(0 6px 12px rgba(214, 168, 79, 0.3));
+      transition: transform 0.3s ease;
+    }
+
+    .explore-card:hover .explore-card-visual svg {
+      transform: scale(1.1) rotate(2deg);
+    }
+
+    .explore-card-title {
+      font-family: var(--font-display);
+      font-size: 1.625rem;
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: 10px;
+    }
+
+    .explore-card-desc {
+      font-size: 0.9375rem;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .explore-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      border: 1px solid rgba(214, 168, 79, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(214, 168, 79, 0.05);
+    }
+
+    /* ==========================================================================
+       GALLERY SECTION (CLEAN ARCHITECTURAL PLACEHOLDERS)
+       ========================================================================== */
+    .gallery-section {
+      padding: 100px 0;
+      background-color: var(--color-white);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .gallery-item {
+      background-color: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(214, 168, 79, 0.5);
+    }
+
+    .gallery-placeholder-icon {
+      width: 48px;
+      height: 48px;
+      color: var(--color-secondary);
+      margin-bottom: 12px;
+      opacity: 0.7;
+    }
+
+    .gallery-label {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .gallery-note {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .gallery-tag-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      color: var(--color-secondary);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 26, 43, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      max-width: 540px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--color-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-primary);
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    /* ==========================================================================
+       LOCATION & SCHEDULE SECTION
+       ========================================================================== */
+    .location-section {
+      padding: 100px 0;
+      background-color: var(--color-bg);
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: stretch;
+    }
+
+    .location-card, .schedule-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-heading {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .address-box {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .address-line {
+      font-size: 1.0625rem;
+      color: var(--color-text);
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .address-pincode {
+      display: inline-block;
+      font-weight: 700;
+      color: var(--color-secondary);
+      background: rgba(18, 60, 102, 0.08);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.9375rem;
+      margin-top: 6px;
+    }
+
+    .map-embed-wrapper {
+      width: 100%;
+      height: 220px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      margin-bottom: 24px;
+      background: #E2E8F0;
+    }
+
+    .map-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Opening Hours Schedule */
+    .schedule-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .schedule-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-bg);
+      font-size: 0.9375rem;
+      transition: all 0.2s ease;
+    }
+
+    .schedule-row.today {
+      background-color: var(--color-secondary);
+      color: var(--color-white);
+      border: 1px solid var(--color-accent);
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(18, 60, 102, 0.2);
+    }
+
+    .schedule-day {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .today-pill {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      background: var(--color-accent);
+      color: var(--color-primary);
+      border-radius: 12px;
+    }
+
+    .schedule-time {
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .schedule-status-banner {
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.875rem;
+      color: #15803D;
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       CONTACT SECTION
+       ========================================================================== */
+    .contact-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--color-primary) 0%, #0d2f50 100%);
+      color: var(--color-white);
+      position: relative;
+    }
+
+    .contact-section .section-title {
+      color: var(--color-white);
+    }
+
+    .contact-section .section-subtitle {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .contact-card-main {
+      max-width: 840px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(214, 168, 79, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .phone-display {
+      margin: 28px 0;
+    }
+
+    .phone-number-big {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.04em;
+      display: inline-block;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .phone-number-big:hover {
+      transform: scale(1.03);
+      color: #F3E5C8;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #20bd5a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    /* Quick Enquiry Form */
+    .quick-enquiry-form {
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: left;
+      background: rgba(7, 26, 43, 0.4);
+      padding: 28px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-white);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      height: 46px;
+      padding: 0 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-sm);
+      color: var(--color-white);
+      font-family: inherit;
+      font-size: 0.9375rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .form-select option {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: #040E18;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 60px 0 30px 0;
+      border-top: 1px solid rgba(214, 168, 79, 0.2);
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col-brand {
+      max-width: 440px;
+    }
+
+    .footer-brand-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: 8px;
+    }
+
+    .footer-brand-address {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .footer-phone-link {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-phone-link:hover {
+      color: #F3E5C8;
+    }
+
+    .footer-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-nav-link {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9375rem;
+    }
+
+    .footer-nav-link:hover {
+      color: var(--color-accent);
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 0.8125rem;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS (OPTIMIZED FOR ANDROID & SMALL SCREENS)
+       ========================================================================== */
+    @media (max-width: 991px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .explore-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta .btn {
+        display: none;
+      }
+      .mobile-toggle {
+        display: flex;
+      }
+      .hero-section {
+        padding: 100px 0 40px 0;
+        min-height: 90vh;
+      }
+      .hero-content {
+        max-width: 100%;
+        text-align: left;
+      }
+      .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-cta-group .btn {
+        width: 100%;
+      }
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-card-main {
+        padding: 28px 20px;
+      }
+      .contact-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .contact-actions .btn {
+        width: 100%;
+      }
+      .about-statement-card {
+        padding: 28px 20px;
+      }
+      .location-card, .schedule-card {
+        padding: 28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="brand-logo" aria-label="Radhe Krishna Hostel Home">
+        <div class="logo-emblem">RK</div>
+        <div class="logo-text">
+          <span class="logo-title">Radhe Krishna</span>
+          <span class="logo-sub">Boys &amp; Girls Hostel</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li><a href="#explore" class="nav-link">Explore</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#location" class="nav-link">Location</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA & Phone -->
+      <div class="nav-cta">
+        <a href="tel:+919199028111" class="btn btn-outline" style="padding: 8px 18px; min-height: 40px; font-size: 0.875rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Call Us
+        </a>
+        <button class="mobile-toggle" id="mobileMenuOpen" aria-label="Open Mobile Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="logo-emblem">RK</div>
+          <div class="logo-text">
+            <span class="logo-title">Radhe Krishna</span>
+            <span class="logo-sub">Hostel</span>
+          </div>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuClose" aria-label="Close Mobile Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#facilities" class="mobile-nav-link">Facilities</a></li>
+        <li><a href="#explore" class="mobile-nav-link">Explore</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#location" class="mobile-nav-link">Location</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div style="padding-top: 24px;">
+      <a href="tel:+919199028111" class="btn btn-gold" style="width: 100%; margin-bottom: 12px;">Call +91 91990 28111</a>
+      <a href="https://wa.me/919199028111" class="btn btn-whatsapp" style="width: 100%;" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION WITH 3D THREE.JS CANVAS
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Interactive Three.js Canvas Container -->
+    <div id="hero-canvas-container" title="Drag or touch to rotate 3D hostel model"></div>
+    <div class="hero-gradient-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- Live Operating Badge -->
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>OPEN TODAY • 5:30 AM – 10:00 PM</span>
+        </div>
+
+        <h1 class="hero-title-main">RADHE KRISHNA</h1>
+        <h2 class="hero-title-sub">Boys &amp; Girls Hostel</h2>
+
+        <p class="hero-description">
+          Comfortable • Safe • Convenient Living in Kankarbagh, Patna
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-gold">Book / Enquire Now</a>
+          <a href="tel:+919199028111" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call +91 91990 28111
+          </a>
+          <a href="#location" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Location
+          </a>
+        </div>
+
+        <div class="hero-3d-hint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+          <span>Interactive 3D Architectural Scene • Drag to view</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== */ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Our Hostel</span>
+        <h2 class="section-title">Dedicated to Clean &amp; Welcoming Living</h2>
+        <p class="section-subtitle">A balanced residential atmosphere designed for students and working professionals.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Exact About Statement -->
+        <div class="about-statement-card">
+          <blockquote class="about-quote">
+            "Radhe Krishna Boys &amp; Girls Hostel offers a comfortable and convenient stay in the heart of Kankarbagh, Patna. Designed for students and working professionals, the hostel focuses on a clean, welcoming and convenient living experience."
+          </blockquote>
+          <p class="about-note">
+            Situated at A-20, P C Colony Rd, the hostel provides immediate connectivity to local transport, libraries, study centers, and daily essentials across Patrakar Nagar and Kankarbagh.
+          </p>
+        </div>
+
+        <!-- Verified Key Attributes -->
+        <div class="about-details-list">
+          <div class="about-info-item">
+            <div class="about-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="about-info-text">
+              <strong>Prime Kankarbagh Address</strong>
+              <span>A-20, P C Colony Rd, PC Colony, Patrakar Nagar, Patna, Bihar 800020</span>
+            </div>
+          </div>
+
+          <div class="about-info-item">
+            <div class="about-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="about-info-text">
+              <strong>Open 7 Days a Week</strong>
+              <span>Daily access from 5:30 AM to 10:00 PM for residents and visitor enquiries</span>
+            </div>
+          </div>
+
+          <div class="about-info-item">
+            <div class="about-info-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="about-info-text">
+              <strong>Boys &amp; Girls Accommodation</strong>
+              <span>Dedicated accommodation wings designed for quiet study and peaceful living</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FACILITIES SECTION (CLEARLY STRUCTURED PLACEHOLDERS)
+       ========================================================================== -->
+  <section class="facilities-section" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Key Highlights</span>
+        <h2 class="section-title">Hostel Overview</h2>
+        <p class="section-subtitle">Reliable accommodation essentials structured for residents in Kankarbagh.</p>
+      </div>
+
+      <!-- EDIT NOTE FOR OWNER: Replace placeholder titles and descriptions below with your confirmed amenities -->
+      <div class="facilities-grid">
+        <!-- Facility Card 1 -->
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <h3 class="facility-title">Comfortable Stay</h3>
+          <p class="facility-desc">Thoughtfully designed residential environment prioritizing cleanliness and restful living.</p>
+          <span class="facility-placeholder-badge">Core Living</span>
+        </div>
+
+        <!-- Facility Card 2 -->
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h3 class="facility-title">Convenient Location</h3>
+          <p class="facility-desc">Located in PC Colony, Kankarbagh with direct access to local markets, institutes, and transit.</p>
+          <span class="facility-placeholder-badge">Patna Central</span>
+        </div>
+
+        <!-- Facility Card 3 -->
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="facility-title">Boys &amp; Girls Accommodation</h3>
+          <p class="facility-desc">Structured residential options catered to both male and female scholars and professionals.</p>
+          <span class="facility-placeholder-badge">All Welcome</span>
+        </div>
+
+        <!-- Facility Card 4 -->
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <h3 class="facility-title">Easy Enquiry</h3>
+          <p class="facility-desc">Direct phone and WhatsApp assistance for prompt room availability and visit scheduling.</p>
+          <span class="facility-placeholder-badge">Instant Connect</span>
+        </div>
+
+        <!-- Facility Card 5 -->
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="facility-title">Daily Accessible</h3>
+          <p class="facility-desc">Active daily operating hours from early morning 5:30 AM through 10:00 PM evening.</p>
+          <span class="facility-placeholder-badge">7 Days Active</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3D INTERACTION SECTION: EXPLORE RADHE KRISHNA HOSTEL
+       ========================================================================== -->
+  <section class="explore-section" id="explore">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--color-accent);">Interactive Perspective</span>
+        <h2 class="section-title">Explore Radhe Krishna Hostel</h2>
+        <p class="section-subtitle">Hover or touch the interactive 3D cards below to inspect key living dimensions.</p>
+      </div>
+
+      <div class="explore-cards-grid">
+        <!-- 3D Card 1: Room -->
+        <div class="explore-card" data-tilt>
+          <div class="explore-card-inner">
+            <div class="explore-card-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path>
+              </svg>
+            </div>
+            <h3 class="explore-card-title">Room</h3>
+            <p class="explore-card-desc">Peaceful, well-ventilated rooms oriented for study, personal rest, and organized day-to-day comfort.</p>
+            <span class="explore-tag">Living Quarters</span>
+          </div>
+        </div>
+
+        <!-- 3D Card 2: Building -->
+        <div class="explore-card" data-tilt>
+          <div class="explore-card-inner">
+            <div class="explore-card-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="22.01"></line><line x1="15" y1="22" x2="15" y2="22.01"></line><line x1="8" y1="6" x2="8" y2="6.01"></line><line x1="16" y1="6" x2="16" y2="6.01"></line><line x1="8" y1="10" x2="8" y2="10.01"></line><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="8" y1="14" x2="8" y2="14.01"></line><line x1="16" y1="14" x2="16" y2="14.01"></line><line x1="8" y1="18" x2="8" y2="18.01"></line><line x1="16" y1="18" x2="16" y2="18.01"></line>
+              </svg>
+            </div>
+            <h3 class="explore-card-title">Building</h3>
+            <p class="explore-card-desc">Clean, multi-tier residential structure situated on P C Colony Road with safe entry points.</p>
+            <span class="explore-tag">Premises</span>
+          </div>
+        </div>
+
+        <!-- 3D Card 3: Location -->
+        <div class="explore-card" data-tilt>
+          <div class="explore-card-inner">
+            <div class="explore-card-visual">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h3 class="explore-card-title">Location</h3>
+            <p class="explore-card-desc">Prime connectivity in PC Colony, Kankarbagh with straightforward access across Patna city.</p>
+            <span class="explore-tag">Kankarbagh Hub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALLERY SECTION (CLEAN ARCHITECTURAL PLACEHOLDERS)
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Preview</span>
+        <h2 class="section-title">Hostel Photo Spaces</h2>
+        <p class="section-subtitle">Click any placeholder slot below to view image placement guidelines.</p>
+      </div>
+
+      <!-- EDIT NOTE FOR OWNER: Replace placeholder blocks with real hostel photos by inserting <img> tags -->
+      <div class="gallery-grid">
+        <!-- Photo Placeholder 1: Building Front -->
+        <div class="gallery-item" data-space="Building Exterior &amp; Entrance" data-note="Insert photo of building facade from P C Colony Road.">
+          <span class="gallery-tag-badge">Exterior</span>
+          <svg class="gallery-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          <h4 class="gallery-label">Hostel Entrance &amp; Facade</h4>
+          <span class="gallery-note">Owner Photo Slot #1</span>
+        </div>
+
+        <!-- Photo Placeholder 2: Room Quarters -->
+        <div class="gallery-item" data-space="Student Living Room" data-note="Insert photo of bedroom setup, study desks, and natural lighting.">
+          <span class="gallery-tag-badge">Accommodation</span>
+          <svg class="gallery-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path>
+          </svg>
+          <h4 class="gallery-label">Resident Room Setup</h4>
+          <span class="gallery-note">Owner Photo Slot #2</span>
+        </div>
+
+        <!-- Photo Placeholder 3: Common Corridors -->
+        <div class="gallery-item" data-space="Common Corridors &amp; Lobbies" data-note="Insert photo of clean staircase, corridor, or reception area.">
+          <span class="gallery-tag-badge">Interior</span>
+          <svg class="gallery-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <h4 class="gallery-label">Hallway &amp; Common Area</h4>
+          <span class="gallery-note">Owner Photo Slot #3</span>
+        </div>
+
+        <!-- Photo Placeholder 4: Study Space -->
+        <div class="gallery-item" data-space="Study &amp; Focus Area" data-note="Insert photo of reading corners or quiet study desks.">
+          <span class="gallery-tag-badge">Study</span>
+          <svg class="gallery-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <h4 class="gallery-label">Reading &amp; Study Area</h4>
+          <span class="gallery-note">Owner Photo Slot #4</span>
+        </div>
+
+        <!-- Photo Placeholder 5: Secure Gates -->
+        <div class="gallery-item" data-space="Hostel Premises Gate" data-note="Insert photo of hostel gate, notice board, and entrance passage.">
+          <span class="gallery-tag-badge">Premises</span>
+          <svg class="gallery-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <h4 class="gallery-label">Entry &amp; Access Gate</h4>
+          <span class="gallery-note">Owner Photo Slot #5</span>
+        </div>
+
+        <!-- Photo Placeholder 6: Kankarbagh Surroundings -->
+        <div class="gallery-item" data-space="PC Colony Neighborhood" data-note="Insert photo of peaceful neighborhood road in PC Colony.">
+          <span class="gallery-tag-badge">Neighborhood</span>
+          <svg class="gallery-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path><circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <h4 class="gallery-label">P C Colony Neighborhood</h4>
+          <span class="gallery-note">Owner Photo Slot #6</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal for Photo Replacement Preview -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-card">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Preview">&times;</button>
+      <div style="width: 56px; height: 56px; margin: 0 auto 16px auto; background: var(--color-accent-subtle); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-accent);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+      </div>
+      <h3 id="modalTitle" style="font-family: var(--font-display); font-size: 1.5rem; color: var(--color-primary); margin-bottom: 8px;">Photo Placeholder</h3>
+      <p id="modalDesc" style="color: var(--color-text-muted); font-size: 0.9375rem; line-height: 1.5; margin-bottom: 20px;"></p>
+      <div style="background: var(--color-bg); padding: 14px; border-radius: var(--radius-sm); border: 1px dashed var(--color-border); font-size: 0.8125rem; color: #4A5568;">
+        <code>&lt;!-- REPLACE WITH ACTUAL PHOTO: &lt;img src="your-image.jpg" alt="Hostel Area"&gt; --&gt;</code>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LOCATION & OPENING HOURS SECTION
+       ========================================================================== -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visit &amp; Schedule</span>
+        <h2 class="section-title">Location &amp; Operating Hours</h2>
+        <p class="section-subtitle">Easily located in Patrakar Nagar, Kankarbagh with daily accessibility.</p>
+      </div>
+
+      <div class="location-grid">
+        <!-- Location Card -->
+        <div class="location-card">
+          <div>
+            <h3 class="card-heading">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Our Address
+            </h3>
+
+            <div class="address-box">
+              <div class="address-line"><strong>A-20, P C Colony Rd</strong></div>
+              <div class="address-line">PC Colony, Kankarbagh</div>
+              <div class="address-line">Patrakar Nagar, Patna, Bihar</div>
+              <span class="address-pincode">PIN: 800020</span>
+            </div>
+
+            <!-- Embedded Map -->
+            <div class="map-embed-wrapper">
+              <iframe
+                title="Radhe Krishna Hostel Location Map"
+                src="https://maps.google.com/maps?q=A-20,+P+C+Colony+Rd,+PC+Colony,+Kankarbagh,+Patrakar+Nagar,+Patna,+Bihar+800020&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=A-20,+P+C+Colony+Rd,+PC+Colony,+Kankarbagh,+Patrakar+Nagar,+Patna,+Bihar+800020" target="_blank" rel="noopener" class="btn btn-secondary" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Weekly Opening Hours Card -->
+        <div class="schedule-card">
+          <div>
+            <h3 class="card-heading">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-accent);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              Weekly Schedule
+            </h3>
+
+            <!-- Live highlight dynamically configured by JS -->
+            <ul class="schedule-list" id="scheduleList">
+              <li class="schedule-row" data-day="1">
+                <span class="schedule-day">Monday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+              <li class="schedule-row" data-day="2">
+                <span class="schedule-day">Tuesday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+              <li class="schedule-row" data-day="3">
+                <span class="schedule-day">Wednesday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+              <li class="schedule-row" data-day="4">
+                <span class="schedule-day">Thursday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+              <li class="schedule-row" data-day="5">
+                <span class="schedule-day">Friday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+              <li class="schedule-row" data-day="6">
+                <span class="schedule-day">Saturday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+              <li class="schedule-row" data-day="0">
+                <span class="schedule-day">Sunday</span>
+                <span class="schedule-time">5:30 AM – 10:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="schedule-status-banner">
+            <span class="pulse-dot"></span>
+            <span>Operating every day including weekends from 5:30 AM to 10:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--color-accent);">Direct Enquiries</span>
+        <h2 class="section-title">Ready to Find Your Stay?</h2>
+        <p class="section-subtitle">Reach out directly via phone or WhatsApp for quick room enquiries and visits.</p>
+      </div>
+
+      <div class="contact-card-main">
+        <span style="font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.7);">
+          Official Contact Number
+        </span>
+
+        <div class="phone-display">
+          <a href="tel:+919199028111" class="phone-number-big" title="Click to Call Radhe Krishna Hostel">
+            +91 91990 28111
+          </a>
+        </div>
+
+        <div class="contact-actions">
+          <a href="tel:+919199028111" class="btn btn-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Now
+          </a>
+          <a href="https://wa.me/919199028111?text=Hello,%20I%20would%20like%20to%20enquire%20about%20staying%20at%20Radhe%20Krishna%20Boys%20%26%20Girls%20Hostel,%20Kankarbagh,%20Patna." class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+            WhatsApp Enquiry
+          </a>
+        </div>
+
+        <!-- Direct Instant Message Generator -->
+        <form class="quick-enquiry-form" id="enquiryForm">
+          <h4 class="form-title">Send a Quick Message</h4>
+          <div class="form-group">
+            <label class="form-label" for="userName">Your Full Name</label>
+            <input type="text" id="userName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="accommodationType">Accommodation Required</label>
+            <select id="accommodationType" class="form-select">
+              <option value="Boys Hostel Enquiry">Boys Hostel Enquiry</option>
+              <option value="Girls Hostel Enquiry">Girls Hostel Enquiry</option>
+              <option value="General Enquiry">General Enquiry</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width: 100%;">
+            Start WhatsApp Chat
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col-brand">
+          <div class="brand-logo" style="margin-bottom: 14px;">
+            <div class="logo-emblem">RK</div>
+            <div class="logo-text">
+              <span class="logo-title">Radhe Krishna</span>
+              <span class="logo-sub">Boys &amp; Girls Hostel</span>
+            </div>
+          </div>
+          <p class="footer-brand-address">
+            A-20, P C Colony Rd, PC Colony, Kankarbagh, Patrakar Nagar, Patna, Bihar 800020
+          </p>
+          <a href="tel:+919199028111" class="footer-phone-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            +91 91990 28111
+          </a>
+        </div>
+
+        <div>
+          <h5 style="color: var(--color-white); font-size: 1rem; margin-bottom: 14px; font-weight: 600;">Navigation</h5>
+          <ul class="footer-nav-list">
+            <li><a href="#hero" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About Hostel</a></li>
+            <li><a href="#facilities" class="footer-nav-link">Facilities</a></li>
+            <li><a href="#explore" class="footer-nav-link">Explore</a></li>
+            <li><a href="#gallery" class="footer-nav-link">Photo Spaces</a></li>
+            <li><a href="#location" class="footer-nav-link">Location &amp; Map</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 style="color: var(--color-white); font-size: 1rem; margin-bottom: 14px; font-weight: 600;">Operating Hours</h5>
+          <p style="font-size: 0.9375rem; line-height: 1.6; margin-bottom: 10px;">
+            Monday – Sunday<br>
+            <span style="color: var(--color-accent); font-weight: 600;">5:30 AM – 10:00 PM</span>
+          </p>
+          <p style="font-size: 0.8125rem; color: rgba(255,255,255,0.6);">
+            Open daily for visits and phone assistance.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Radhe Krishna Boys &amp; Girls Hostel. All rights reserved.</p>
+        <p>A-20, P C Colony Rd, Kankarbagh, Patna, Bihar 800020</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT & THREE.JS 3D SCENE
+       ========================================================================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      /* ------------------------------------------------------------------------
+         1. STICKY NAVBAR SCROLL BEHAVIOR
+         ------------------------------------------------------------------------ */
+      var navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 40) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      }, { passive: true });
+
+      /* ------------------------------------------------------------------------
+         2. MOBILE MENU DRAWER
+         ------------------------------------------------------------------------ */
+      var mobileOpenBtn = document.getElementById("mobileMenuOpen");
+      var mobileCloseBtn = document.getElementById("mobileMenuClose");
+      var mobileDrawer = document.getElementById("mobileDrawer");
+      var mobileOverlay = document.getElementById("mobileDrawerOverlay");
+      var mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+      function openDrawer() {
+        mobileDrawer.classList.add("open");
+        mobileOverlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeDrawer() {
+        mobileDrawer.classList.remove("open");
+        mobileOverlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      if (mobileOpenBtn) mobileOpenBtn.addEventListener("click", openDrawer);
+      if (mobileCloseBtn) mobileCloseBtn.addEventListener("click", closeDrawer);
+      if (mobileOverlay) mobileOverlay.addEventListener("click", closeDrawer);
+      mobileLinks.forEach(function (link) {
+        link.addEventListener("click", closeDrawer);
+      });
+
+      /* ------------------------------------------------------------------------
+         3. HIGHLIGHT CURRENT DAY IN OPENING HOURS
+         ------------------------------------------------------------------------ */
+      var currentDayIndex = new Date().getDay(); // 0 is Sunday, 1 is Monday ...
+      var scheduleRows = document.querySelectorAll(".schedule-row");
+      scheduleRows.forEach(function (row) {
+        if (parseInt(row.getAttribute("data-day"), 10) === currentDayIndex) {
+          row.classList.add("today");
+          var daySpan = row.querySelector(".schedule-day");
+          if (daySpan && !daySpan.querySelector(".today-pill")) {
+            var pill = document.createElement("span");
+            pill.className = "today-pill";
+            pill.textContent = "Today";
+            daySpan.appendChild(pill);
+          }
+        }
+      });
+
+      /* ------------------------------------------------------------------------
+         4. GALLERY LIGHTBOX MODAL
+         ------------------------------------------------------------------------ */
+      var galleryItems = document.querySelectorAll(".gallery-item");
+      var lightboxModal = document.getElementById("lightboxModal");
+      var lightboxClose = document.getElementById("lightboxClose");
+      var modalTitle = document.getElementById("modalTitle");
+      var modalDesc = document.getElementById("modalDesc");
+
+      galleryItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          var space = item.getAttribute("data-space");
+          var note = item.getAttribute("data-note");
+          if (modalTitle) modalTitle.textContent = space;
+          if (modalDesc) modalDesc.textContent = note;
+          if (lightboxModal) lightboxModal.classList.add("active");
+        });
+      });
+
+      if (lightboxClose) {
+        lightboxClose.addEventListener("click", function () {
+          lightboxModal.classList.remove("active");
+        });
+      }
+
+      if (lightboxModal) {
+        lightboxModal.addEventListener("click", function (e) {
+          if (e.target === lightboxModal) {
+            lightboxModal.classList.remove("active");
+          }
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         5. QUICK ENQUIRY FORM TO WHATSAPP
+         ------------------------------------------------------------------------ */
+      var enquiryForm = document.getElementById("enquiryForm");
+      if (enquiryForm) {
+        enquiryForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var name = document.getElementById("userName").value.trim();
+          var type = document.getElementById("accommodationType").value;
+          var text = "Hello Radhe Krishna Hostel, my name is " + encodeURIComponent(name) + ". I am making an enquiry regarding: " + encodeURIComponent(type) + " at your Kankarbagh hostel.";
+          var whatsappUrl = "https://wa.me/919199028111?text=" + text;
+          window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+        });
+      }
+
+      /* ------------------------------------------------------------------------
+         6. 3D TILT EFFECT ON EXPLORE CARDS (Subtle Mouse & Touch Parallax)
+         ------------------------------------------------------------------------ */
+      var tiltCards = document.querySelectorAll("[data-tilt]");
+      tiltCards.forEach(function (card) {
+        card.addEventListener("mousemove", function (e) {
+          var rect = card.getBoundingClientRect();
+          var x = e.clientX - rect.left;
+          var y = e.clientY - rect.top;
+          var centerX = rect.width / 2;
+          var centerY = rect.height / 2;
+          var rotateX = ((y - centerY) / centerY) * -10;
+          var rotateY = ((x - centerX) / centerX) * 10;
+          card.style.transform = "rotateX(" + rotateX.toFixed(2) + "deg) rotateY(" + rotateY.toFixed(2) + "deg)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          card.style.transform = "rotateX(0deg) rotateY(0deg)";
+        });
+      });
+
+      /* ------------------------------------------------------------------------
+         7. LIGHTWEIGHT THREE.JS 3D ARCHITECTURAL HERO SCENE
+            - Stylized 3D Hostel Building Geometry
+            - Warm Architectural Lighting & Subtle Floating Gold Dust Particles
+            - Optimized for Android & Mobile (DPR capping, low draw-calls)
+            - Smooth Parallax & Touch Interaction
+         ------------------------------------------------------------------------ */
+      var container = document.getElementById("hero-canvas-container");
+      if (!container || typeof THREE === "undefined") return;
+
+      var scene = new THREE.Scene();
+      // Subtle atmospheric fog matching deep navy
+      scene.fog = new THREE.FogExp2(0x071A2B, 0.028);
+
+      var width = container.clientWidth || window.innerWidth;
+      var height = container.clientHeight || window.innerHeight;
+
+      var camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
+      camera.position.set(6, 4.5, 9);
+      camera.lookAt(0, 1.2, 0);
+
+      var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+      renderer.setSize(width, height);
+      // Cap DPR to 1.5 to maintain buttery performance on Android devices
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.1;
+      container.appendChild(renderer.domElement);
+
+      /* Lighting Setup */
+      var ambientLight = new THREE.AmbientLight(0x284766, 1.3);
+      scene.add(ambientLight);
+
+      // Key architectural warm directional light
+      var dirLight = new THREE.DirectionalLight(0xD6A84F, 2.0);
+      dirLight.position.set(8, 12, 6);
+      scene.add(dirLight);
+
+      // Soft cool rim light from behind
+      var rimLight = new THREE.DirectionalLight(0x5088B8, 1.2);
+      rimLight.position.set(-8, 6, -8);
+      scene.add(rimLight);
+
+      // Ground plane bounce light
+      var bounceLight = new THREE.PointLight(0xD6A84F, 1.0, 12);
+      bounceLight.position.set(0, 0.5, 3);
+      scene.add(bounceLight);
+
+      /* Materials */
+      var navyFacadeMat = new THREE.MeshStandardMaterial({
+        color: 0x123C66,
+        roughness: 0.45,
+        metalness: 0.15
+      });
+
+      var darkTrimMat = new THREE.MeshStandardMaterial({
+        color: 0x071A2B,
+        roughness: 0.5,
+        metalness: 0.2
+      });
+
+      var goldAccentMat = new THREE.MeshStandardMaterial({
+        color: 0xD6A84F,
+        roughness: 0.3,
+        metalness: 0.75
+      });
+
+      // Warm interior glowing windows
+      var litWindowMat = new THREE.MeshStandardMaterial({
+        color: 0xFFE8B3,
+        emissive: 0xF7D070,
+        emissiveIntensity: 0.65,
+        roughness: 0.2
+      });
+
+      var groundMat = new THREE.MeshStandardMaterial({
+        color: 0x061522,
+        roughness: 0.8,
+        metalness: 0.1
+      });
+
+      /* Building Group Construction */
+      var buildingGroup = new THREE.Group();
+
+      // Ground Paving / Base Plinth
+      var plinthGeo = new THREE.BoxGeometry(7, 0.2, 5.5);
+      var plinth = new THREE.Mesh(plinthGeo, darkTrimMat);
+      plinth.position.y = -0.1;
+      buildingGroup.add(plinth);
+
+      // Main Multi-Story Hostel Tower
+      var mainTowerGeo = new THREE.BoxGeometry(3.6, 4.2, 2.8);
+      var mainTower = new THREE.Mesh(mainTowerGeo, navyFacadeMat);
+      mainTower.position.set(-0.2, 2.1, 0);
+      buildingGroup.add(mainTower);
+
+      // Side Residential Wing / Annex
+      var annexGeo = new THREE.BoxGeometry(2.2, 3.2, 2.4);
+      var annex = new THREE.Mesh(annexGeo, navyFacadeMat);
+      annex.position.set(2.0, 1.6, -0.1);
+      buildingGroup.add(annex);
+
+      // Entrance Canopy with Gold Trim Columns
+      var canopyGeo = new THREE.BoxGeometry(2.0, 0.1, 1.2);
+      var canopy = new THREE.Mesh(canopyGeo, darkTrimMat);
+      canopy.position.set(-0.2, 0.9, 1.8);
+      buildingGroup.add(canopy);
+
+      var pillarGeo = new THREE.CylinderGeometry(0.05, 0.05, 0.9, 8);
+      var pillar1 = new THREE.Mesh(pillarGeo, goldAccentMat);
+      pillar1.position.set(-0.9, 0.45, 2.2);
+      var pillar2 = new THREE.Mesh(pillarGeo, goldAccentMat);
+      pillar2.position.set(0.5, 0.45, 2.2);
+      buildingGroup.add(pillar1);
+      buildingGroup.add(pillar2);
+
+      // Entrance Glass Doors
+      var doorGeo = new THREE.BoxGeometry(1.2, 0.8, 0.08);
+      var doors = new THREE.Mesh(doorGeo, litWindowMat);
+      doors.position.set(-0.2, 0.4, 1.41);
+      buildingGroup.add(doors);
+
+      // Rooftop Terrace Pergola & Railing
+      var roofGeo = new THREE.BoxGeometry(3.7, 0.15, 2.9);
+      var roof = new THREE.Mesh(roofGeo, darkTrimMat);
+      roof.position.set(-0.2, 4.25, 0);
+      buildingGroup.add(roof);
+
+      var pergolaGeo = new THREE.BoxGeometry(2.4, 0.08, 1.6);
+      var pergola = new THREE.Mesh(pergolaGeo, goldAccentMat);
+      pergola.position.set(-0.4, 4.8, 0);
+      buildingGroup.add(pergola);
+
+      // Grid of Glowing Windows across Facade
+      var windowGeo = new THREE.BoxGeometry(0.48, 0.6, 0.06);
+      var windowCols = [-1.4, -0.8, -0.2, 0.4, 1.0];
+      var windowRows = [1.5, 2.4, 3.3];
+
+      windowRows.forEach(function (y) {
+        windowCols.forEach(function (x) {
+          var win = new THREE.Mesh(windowGeo, litWindowMat);
+          win.position.set(x, y, 1.41);
+          buildingGroup.add(win);
+        });
+      });
+
+      // Side Wing Windows
+      var annexWinCols = [1.4, 2.2, 2.8];
+      var annexWinRows = [1.2, 2.2];
+      annexWinRows.forEach(function (y) {
+        annexWinCols.forEach(function (x) {
+          var win = new THREE.Mesh(windowGeo, litWindowMat);
+          win.position.set(x, y, 1.11);
+          buildingGroup.add(win);
+        });
+      });
+
+      // Architectural Louvers / Gold Balcony Edge
+      for (var b = 0; b < 3; b++) {
+        var balcGeo = new THREE.BoxGeometry(1.4, 0.06, 0.25);
+        var balc = new THREE.Mesh(balcGeo, goldAccentMat);
+        balc.position.set(-0.2, 1.2 + (b * 0.9), 1.55);
+        buildingGroup.add(balc);
+      }
+
+      // Add Building Group to Scene
+      scene.add(buildingGroup);
+
+      // Ground Radial Plane
+      var groundCircle = new THREE.CircleGeometry(14, 32);
+      var ground = new THREE.Mesh(groundCircle, groundMat);
+      ground.rotation.x = -Math.PI / 2;
+      ground.position.y = -0.15;
+      scene.add(ground);
+
+      /* Floating Ambient Gold Dust Particles */
+      var particleCount = 60;
+      var particleGeo = new THREE.BufferGeometry();
+      var particlePos = new Float32Array(particleCount * 3);
+      for (var i = 0; i < particleCount * 3; i += 3) {
+        particlePos[i] = (Math.random() - 0.5) * 14;
+        particlePos[i + 1] = Math.random() * 6 + 0.2;
+        particlePos[i + 2] = (Math.random() - 0.5) * 14;
+      }
+      particleGeo.setAttribute("position", new THREE.BufferAttribute(particlePos, 3));
+
+      var particleMat = new THREE.PointsMaterial({
+        color: 0xD6A84F,
+        size: 0.1,
+        transparent: true,
+        opacity: 0.65
+      });
+      var particles = new THREE.Points(particleGeo, particleMat);
+      scene.add(particles);
+
+      /* Mouse / Touch Parallax & Interaction */
+      var mouseX = 0, mouseY = 0;
+      var targetRotationY = 0, targetRotationX = 0;
+      var isDragging = false, prevMouseX = 0;
+
+      function onPointerMove(e) {
+        var clientX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+        var clientY = e.clientY || (e.touches && e.touches[0].clientY) || 0;
+
+        if (isDragging) {
+          var deltaX = clientX - prevMouseX;
+          targetRotationY += deltaX * 0.005;
+          prevMouseX = clientX;
+        }
+
+        mouseX = (clientX / window.innerWidth) * 2 - 1;
+        mouseY = -(clientY / window.innerHeight) * 2 + 1;
+      }
+
+      window.addEventListener("mousemove", onPointerMove, { passive: true });
+      container.addEventListener("mousedown", function (e) {
+        isDragging = true;
+        prevMouseX = e.clientX;
+      });
+      window.addEventListener("mouseup", function () {
+        isDragging = false;
+      });
+
+      // Touch events for mobile
+      container.addEventListener("touchstart", function (e) {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          prevMouseX = e.touches[0].clientX;
+        }
+      }, { passive: true });
+      container.addEventListener("touchmove", onPointerMove, { passive: true });
+      window.addEventListener("touchend", function () {
+        isDragging = false;
+      });
+
+      /* Handle Window Resize */
+      function onWindowResize() {
+        if (!container) return;
+        var w = container.clientWidth || window.innerWidth;
+        var h = container.clientHeight || window.innerHeight;
+        camera.aspect = w / h;
+        camera.updateProjectionMatrix();
+        renderer.setSize(w, h);
+      }
+      window.addEventListener("resize", onWindowResize);
+
+      /* Animation Loop */
+      var clock = new THREE.Clock();
+      var isVisible = true;
+
+      // Visibility API: pause rendering if tab is hidden or hero is out of view
+      document.addEventListener("visibilitychange", function () {
+        isVisible = !document.hidden;
+      });
+
+      function animate() {
+        requestAnimationFrame(animate);
+        if (!isVisible) return;
+
+        var elapsedTime = clock.getElapsedTime();
+
+        // Slow continuous architectural rotation + user interaction
+        targetRotationY += 0.0015;
+        buildingGroup.rotation.y += (targetRotationY - buildingGroup.rotation.y) * 0.05;
+
+        // Smooth subtle camera tilt from mouse
+        camera.position.x += ((6 + mouseX * 0.8) - camera.position.x) * 0.03;
+        camera.position.y += ((4.5 + mouseY * 0.5) - camera.position.y) * 0.03;
+        camera.lookAt(0, 1.2, 0);
+
+        // Gently float gold dust particles upward
+        var positions = particles.geometry.attributes.position.array;
+        for (var p = 1; p < particleCount * 3; p += 3) {
+          positions[p] += 0.003;
+          if (positions[p] > 7) {
+            positions[p] = 0.2;
+          }
+        }
+        particles.geometry.attributes.position.needsUpdate = true;
+        particles.rotation.y = elapsedTime * 0.02;
+
+        renderer.render(scene, camera);
+      }
+
+      animate();
+
+    })();
+  </script>
+</body>
+</html>
